@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    position: relative;
+}
+#logo{
+    margin: 6px 6px;
+    padding: 10px 10px;
+
+}
+#logo img{
+    width: 77px;
+    height: 58px;
+
+}
+#navbar ul{
+    display: flex;
+    margin: 37px 20px;
+}
+#navbar::before{
+    content: "";
+    background-color: blueviolet;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2px 20px;
+}
+#home::before{
+    content: "";
+    background: url('../noodles.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 357px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+.h-primary{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    color: white;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#home p{
+    padding:1px 20px ;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.btn{
+    border-color: orange;
+    width: 119px;
+    height: 41px;
+    margin: auto;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.h-primary-center{
+    display: block;
+    margin: 100px auto;
+    width: 134px;
+
+
+}
+.services{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.box img{
+    width: 50%;
+     /* height: 100px; */
+    /* margin: auto;  */
+
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.box h2{
+    text-align: center;
+}
+.box{
+    padding: 14px;
+    margin: 2px 3px;
+    margin-bottom: 20px;
+    border: 2px solid red;
+    width: 33%;
+    border-radius: 23px;
+    background-color: #eae3da;
+
+}
+/* #client-section{
+    display: flex;
+    flex-direction: column;
+} */
+#clients{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.primary-section{
+    text-align: center;
+    margin: 23px 23px;
+    padding: 5px 5px;
+}
+#client-section img{
+    width: 66px;
+    padding: 6px;
+    height: auto;
+}
+#client-section::before{
+    content: "";
+    background: url('../bc2.jpg') ;
+    position: relative;
+    height: 357px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    /* z-index: -1; */
+    opacity:0.89;
+}
+
+
